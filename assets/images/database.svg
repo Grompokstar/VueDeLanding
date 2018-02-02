@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <rect id="a" width="36" height="8" x="20" y="10" rx="4"/>
+        <rect id="b" width="36" height="8" x="20" y="26" rx="4"/>
+        <rect id="c" width="36" height="8" x="20" y="42" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="30" cy="30" r="30" fill="#F5F5F5"/>
+        <use fill="#FFF" xlink:href="#a"/>
+        <rect width="38" height="10" x="19" y="9" stroke="#123F55" stroke-width="2" rx="5"/>
+        <circle cx="25" cy="14" r="1" fill="#00B0A3"/>
+        <circle cx="28" cy="14" r="1" fill="#00B0A3"/>
+        <circle cx="31" cy="14" r="1" fill="#00B0A3"/>
+        <use fill="#FFF" xlink:href="#b"/>
+        <rect width="38" height="10" x="19" y="25" stroke="#123F55" stroke-width="2" rx="5"/>
+        <circle cx="25" cy="30" r="1" fill="#00B0A3"/>
+        <circle cx="28" cy="30" r="1" fill="#00B0A3"/>
+        <circle cx="31" cy="30" r="1" fill="#00B0A3"/>
+        <use fill="#FFF" xlink:href="#c"/>
+        <rect width="38" height="10" x="19" y="41" stroke="#123F55" stroke-width="2" rx="5"/>
+        <circle cx="25" cy="46" r="1" fill="#00B0A3"/>
+        <circle cx="28" cy="46" r="1" fill="#00B0A3"/>
+        <circle cx="31" cy="46" r="1" fill="#00B0A3"/>
+    </g>
+</svg>

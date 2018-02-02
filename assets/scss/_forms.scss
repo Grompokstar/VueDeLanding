@@ -1,0 +1,99 @@
+.form-control {
+  padding: 11px 12px;
+  border-color: $form-border-color;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #000;
+  line-height: 16px;
+
+  &::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+
+  &::-moz-placeholder {
+    color: #d6d6d6;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: rgba(18, 63, 85, 0.75);
+    color: #000;
+  }
+
+  &.error {
+    border-color: $red-brand-color;
+  }
+}
+
+label.error {
+  font-size: 12px;
+  font-family: Proxima_Nova_Semibold, sans-serif;
+  color: $red-brand-color;
+  margin-bottom: 0;
+}
+
+
+.btn {
+  cursor: pointer;
+  font-family: Proxima_Nova_Bold, sans-serif;
+  padding: 7px 15px;
+
+  &.btn-green {
+    background-color: $green-brand-color;
+    color: white;
+
+    &:hover {
+      background-color: $green-brand-color-hover;
+    }
+  }
+
+
+  &.btn-red {
+    background-color: $red-brand-color;
+    color: white;
+
+    &:hover {
+      background-color: $red-brand-color-hover;
+    }
+  }
+
+  &.btn-orange {
+    background-color: $orange-brand-color;
+    color: white;
+
+    &:hover {
+      background-color: $orange-brand-color-hover;
+    }
+  }
+
+  &.btn-lg {
+    font-size: 20px;
+    padding: 10px 50px;
+  }
+}
+
+.input-with-inside-label {
+  position: relative;
+
+  label {
+    position: absolute;
+    font-size: 12px;
+    top: 10px;
+    left: 12px;
+  }
+
+  input.form-control {
+    height: 60px;
+    padding: 28px 12px 6px;
+  }
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.invalid-feedback {
+  font-size: 12px;
+  font-family: Proxima_Nova_Semibold, sans-serif;
+}
+

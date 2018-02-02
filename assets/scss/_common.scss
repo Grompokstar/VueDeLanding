@@ -1,0 +1,394 @@
+html, body {
+  font-family: "Proxima_Nova_Regular", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $font-color;
+  background-color: $bg-color;
+  line-height: 1.375;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+.red-text {
+  color: $red-brand-color;
+}
+
+.light-gray-text {
+  color: #c4d0d4;
+}
+
+.orange-link {
+  color: $orange-brand-color;
+  font-family: Proxima_Nova_Semibold, sans-serif;
+  border-bottom: 2px dashed $orange-brand-color;
+
+  &:hover {
+    color: $orange-brand-color-hover;
+    text-decoration: none;
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+span.red-link {
+  font-size: 16px;
+  color: $red-brand-color;
+  font-family: Proxima_Nova_Semibold, sans-serif;
+  border-bottom: 2px dashed $red-brand-color;
+
+  &:hover {
+    color: $red-brand-color-hover;
+    text-decoration: none;
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: Proxima_Nova_Bold, sans-serif;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Proxima_Nova_Bold, sans-serif;
+  margin-bottom: 0;
+}
+
+a {
+  color: $green-brand-color;
+
+  &:hover {
+    color: $green-brand-color;
+  }
+}
+
+.strong-text {
+  font-family: Proxima_Nova_Bold, sans-serif;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background-color: $font-color;
+  opacity: 0.1;
+  margin: 33px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display:none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  margin: 0;
+}
+
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 4px;
+}
+
+td {
+  input[type="checkbox"] + label::before,
+  input[type="radio"] + label::before {
+   margin: 0;
+  }
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label.radio-as-checkbox::before {
+  background-image: url(~assets/images/checkbox-off.png);
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label.radio-as-checkbox::before{
+  background-image: url(~assets/images/checkbox-on.png);
+}
+
+input[type="radio"] + label::before {
+  background-image: url(~assets/images/radio-off.png);
+}
+
+input[type="radio"]:checked + label::before {
+  background-image: url(~assets/images/radio-on.png);
+}
+
+.backup-btn {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  border: 1px dashed $form-border-color;
+
+  &:hover {
+    border-color: rgba(18, 63, 85, 0.75);
+  }
+
+  span {
+    display: block;
+  }
+
+  &.success {
+    .main-text {
+      color: $green-brand-color;
+    }
+
+    .additional-text {
+      &:nth-child(2n) {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+
+      svg, span {
+        display: inline-block;
+      }
+    }
+  }
+
+
+
+  .main-text {
+    font-family: Proxima_Nova_Semibold, sans-serif;
+    color: $red-brand-color;
+  }
+
+  .additional-text {
+    font-family: Proxima_Nova_Regular, sans-serif;
+    font-size: 12px;
+    opacity: 0.4;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.backup-table {
+  background-color: $light-gray-bg;
+  width: 100%;
+  padding: 10px;
+
+  th {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    color: #454545;
+    padding: 20px 10px 10px 10px;
+  }
+
+  tbody {
+    td {
+      text-align: center;
+      padding: 10px;
+
+      &:first-child {
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        font-weight: normal;
+        color: #454545;
+        width: 150px;
+      }
+    }
+
+    tr:last-child {
+      td {
+        padding: 10px 10px 20px 10px;
+      }
+    }
+  }
+}
+
+.backup-selects {
+  display: flex;
+
+  .select-with-label {
+    width: 145px;
+    margin-bottom: 24px;
+  }
+}
+
+#custom-folder-input-block {
+  display: none;
+}
+
+.total-price {
+  font-size: 24px;
+  font-family: Proxima_Nova_Bold, sans-serif;
+  margin-left: 15px;
+}
+
+.width-170 {
+  width: 170px;
+}
+
+.width-270 {
+  width: 270px;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 19px;
+}
+
+.font-xxl {
+  font-size: 48px;
+}
+
+.ruble {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.ruble-sm {
+  font-weight: bold;
+}
+
+.success-send-text {
+  font-size: 20px;
+  color: $green-brand-color;
+  display: none;
+}
+
+
+.error-send-text {
+  font-size: 20px;
+  color: $red-brand-color;
+  display: none;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+  content: "";
+  background: url("~assets/images/red_arrow.png") no-repeat;
+  background-size: contain;
+  vertical-align: 3px;
+  margin-left: 2px;
+}
+
+
+.nav.page-navigation {
+  a {
+    color: $font-color;
+    padding: 10px 15px;
+
+    &.active {
+      font-family: Proxima_Nova_Bold, sans-serif;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .dropdown-toggle::after {
+    background-image: url(~assets/images/red_arrow@2x.png);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .block-header {
+    padding-top: 30px!important;
+    display: block;
+  }
+
+  .font-xxl {
+    font-size: 32px;
+  }
+
+  #choose-product .nav-pills .nav-link, #configurator .nav-pills .nav-link {
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  #choose-product .tab-pane, #configurator .tab-pane {
+    padding: 15px !important;
+  }
+
+  #configurator, #choose-product {
+    .text-right {
+      text-align: left!important;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .ml-5 {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      margin-left: 0!important;
+    }
+  }
+
+  .backup-table {
+    th {
+      padding: 10px 5px 5px 5px;
+    }
+
+    tbody {
+      td {
+        text-align: center;
+        padding: 5px;
+
+        &:first-child {
+          font-size: 10px;
+          text-align: left;
+          width: 50px;
+        }
+      }
+
+      tr:last-child {
+        td {
+          padding: 5px 5px 10px 5px;
+        }
+      }
+    }
+  }
+
+  .save-backup-config-btn {
+    width: 100%;
+  }
+
+  #content {
+    margin-top: 80px;
+  }
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
